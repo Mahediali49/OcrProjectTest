@@ -20,25 +20,6 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
-   <widget class="QFrame" name="liveCam">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>600</width>
-      <height>500</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">Background-color: White;</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
    <widget class="QTextEdit" name="ocrResult">
     <property name="geometry">
      <rect>
@@ -51,44 +32,6 @@
     <property name="styleSheet">
      <string notr="true">Background-color: White;
 Color: Black;</string>
-    </property>
-   </widget>
-   <widget class="QFrame" name="cam1">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>588</y>
-      <width>250</width>
-      <height>150</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">Background-color: White;</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="cam2">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>588</y>
-      <width>250</width>
-      <height>150</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">Background-color: White;</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -182,7 +125,20 @@ Color: White;</string>
      <string>Save ROI</string>
     </property>
    </widget>
-   <widget class="QFrame" name="singleOcrFrame">
+   <widget class="QGraphicsView" name="liveCam">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>600</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">Background-color: White;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="singleOcrFrame">
     <property name="geometry">
      <rect>
       <x>631</x>
@@ -192,13 +148,33 @@ Color: White;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: white;</string>
+     <string notr="true">Background-color: White;</string>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
+   </widget>
+   <widget class="QGraphicsView" name="cam2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>588</y>
+      <width>250</width>
+      <height>150</height>
+     </rect>
     </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
+    <property name="styleSheet">
+     <string notr="true">Background-color: White;</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cam1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>588</y>
+      <width>250</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">Background-color: White;</string>
     </property>
    </widget>
   </widget>
