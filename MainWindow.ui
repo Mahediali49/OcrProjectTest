@@ -20,7 +20,7 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
-   <widget class="QFrame" name="live_cam">
+   <widget class="QFrame" name="liveCam">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -39,20 +39,21 @@
      <enum>QFrame::Shadow::Raised</enum>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="ocrResult">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>360</y>
-      <width>191</width>
-      <height>31</height>
+      <x>631</x>
+      <y>330</y>
+      <width>377</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">Background-color: White;</string>
+     <string notr="true">Background-color: White;
+Color: Black;</string>
     </property>
    </widget>
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="cam1">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -71,7 +72,7 @@
      <enum>QFrame::Shadow::Raised</enum>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_2">
+   <widget class="QFrame" name="cam2">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -93,9 +94,9 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>99</x>
+      <x>100</x>
       <y>550</y>
-      <width>100</width>
+      <width>65</width>
       <height>31</height>
      </rect>
     </property>
@@ -116,9 +117,9 @@ Color: red;</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>359</x>
+      <x>370</x>
       <y>550</y>
-      <width>100</width>
+      <width>70</width>
       <height>31</height>
      </rect>
     </property>
@@ -134,6 +135,70 @@ Color: red;</string>
     </property>
     <property name="text">
      <string>Cam 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>636</x>
+      <y>280</y>
+      <width>124</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">Background-color: transparent;
+Color: red;</string>
+    </property>
+    <property name="text">
+     <string>OCR Result:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveRoiBtn">
+    <property name="geometry">
+     <rect>
+      <x>631</x>
+      <y>460</y>
+      <width>377</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">Background-color: #4D4D4D;
+Color: White;</string>
+    </property>
+    <property name="text">
+     <string>Save ROI</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="singleOcrFrame">
+    <property name="geometry">
+     <rect>
+      <x>631</x>
+      <y>10</y>
+      <width>377</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
     </property>
    </widget>
   </widget>
